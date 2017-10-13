@@ -1,3 +1,5 @@
-export default function api (url) {
-  return fetch(url).then(response => response.json());
-}
+
+
+    export default function api (url) {
+      return fetch(url).then(response => response.json());
+    }
