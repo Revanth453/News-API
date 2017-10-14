@@ -2,11 +2,11 @@
 
     export default function Article (props) {
       return (
-        <div>
+        <div className="container-fluid">
           <h3><a href={props.url}>{props.title}</a></h3>
-          <img src={props.urlToImage} />
-          <p>by {props.author}</p>
-          <p>{props.description}</p>
+          <img className="img-thumbnail"src={props.urlToImage} alt={props.title} />
+          <h3>By {props.author}</h3>
+          <h4>{props.description}</h4>
           <hr />
         </div>
       )

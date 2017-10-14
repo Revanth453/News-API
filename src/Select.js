@@ -1,6 +1,7 @@
+
     import React from 'react';
 
-    export default function Dropdown (props) {
+     function Select (props) {
       return (
         <select onChange={props.selectSource}>
           {props.sources.map(s => (
@@ -9,3 +10,5 @@
         </select>
       );
     }
+
+    export default Select;
